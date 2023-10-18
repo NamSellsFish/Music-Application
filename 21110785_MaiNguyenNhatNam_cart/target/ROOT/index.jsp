@@ -2,14 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
+    <title>Music Application</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
-    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>   
+<div>
+    <!-- Breadcrumb -->
+    <c:import url="breadcrumb.html" />
+</div>
 <h1>CD list</h1>
-
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <table>
     <tr>
         <th>Description</th>
@@ -26,7 +28,6 @@
             </form></td>
     </tr>
     </c:forEach>
-</table>
-        
+</table>  
 </body>
 </html>

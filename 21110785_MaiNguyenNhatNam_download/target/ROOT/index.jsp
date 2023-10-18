@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Download Application</title>
+<title>Music Application</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 	tailwind.config = {
@@ -33,6 +33,10 @@
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<main
 		class="md:container w-fit mx-auto my-8 flex flex-col place-items-center">
+		
+		<!-- Breadcrumb -->
+		<c:import url="/components/breadcrumb.html" />
+		
 		<!-- Logo -->
 		<a href="./"
 			class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -91,7 +95,7 @@
 					class="">My World 2.0</a></li>
 			</ul>
 			<!-- <h2 class="mb-2 text-lg font-semibold text-cyan-600 dark:text-white"><span></span> <p></p></h2> -->
-			<span class="text-red-500">Old-school guy? </span><span class="text-blue-400"><a href="" class="">Click here! (Ex 7.3, 9.2)</a></span>
+			<span class="text-red-500">Old-school guy? </span><span class="text-blue-400"><a href="https://music-app-cart.onrender.com/loadProducts" class="">Click here! (Ex 7.3, 9.2)</a></span>
 		</section>
 	</main>
 

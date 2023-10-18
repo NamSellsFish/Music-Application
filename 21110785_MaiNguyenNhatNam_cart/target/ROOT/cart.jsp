@@ -2,10 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-</head>
+  </head>
 <body>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<div>
+<!-- Breadcrumb -->
+<c:import url="breadcrumb.html" />
+</div> 
 
 <h1>Your cart</h1>
 
@@ -48,7 +53,7 @@
 
 <p><b>To change the quantity</b>, enter the new quantity 
       and click on the Update button.</p>
-  
+<div class="flex justify-between">
 <form action="" method="post">
   <input type="hidden" name="action" value="shop">
   <input type="submit" value="Continue Shopping">
@@ -58,6 +63,6 @@
   <input type="hidden" name="action" value="checkout">
   <input type="submit" value="Checkout">
 </form>
-
+</div>
 </body>
 </html>
